@@ -8,12 +8,9 @@ This project enables the user to interact with Marvel functionality through APIs
 ## Installation
 ### api
 * Navigate to the api folder and install the dependencies: `npm install`
+* To connect to the real Marvel API, you need to update the `api/config/keys.ts` file with the private and public keys retrieved at: https://developer.marvel.com/. Alternatively, start the mock-server as per the next step and connect the graphql server to it by running: `npm run start:mock`
+
 * Start the graphql server by running: `npm start`. Open the GraphQL editor on: http://localhost:4000/
-* To connect to the Marvel API, create a new file `keys.ts` under `api/config` file and add:
-```
-export const publicKey = 'public-key';
-export const privateKey = 'private-key';
-```
 #### mockserver
 * Navigate to the mockserver folder and install the dependencies: `npm install`
 * To start the mockserver, run the following command in your terminal: `docker-compose up`
