@@ -17,6 +17,7 @@
     "md5": "^2.2.1"
   },
   "devDependencies": {
-    "@types/node": "^12.6.8"
+    "@types/node": "^12.6.8",
+    "typescript": "^3.5.3"
   }
 }
