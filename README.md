@@ -33,11 +33,13 @@ Below is the structure of the code:
     |----config
     |----mappings - Functions that glue our project to the marvel APIs
     |----index.ts - Entry point, runner of the graphql server
-    mockserver
-    |----config
-    |----endpoints - Functions that mock the marvel endpoints we're interacting with
-    |----setupLocalMocks - The mock data creation happens in this folder for local data usage
-    |----createMockExpectations.ts - Generic function that is called to create mocks, usually called from the endpoints folder; this function cleans the expectation if it  already exists, then creates a new one
     ui
     |----components - React components
     |----index.js - Entry point to the application - Renders the App component, which is the container of the graphql ApolloProvider
+    e2e
+    |----Feature
+    |----Steps
+    |----support/mockserver
+        |----endpoints - Functions that mock the marvel endpoints we're interacting with
+        |----setupLocalMocks - The mock data creation happens in this folder for local data usage
+        |----createMockExpectations.ts - Generic function that is called to create mocks, usually called from the endpoints folder; this function cleans the expectation if it  already exists, then creates a new one
