@@ -1,0 +1,5 @@
+node_modules/
+.vscode/
+MarvelClients/
+*.mp4
+*.log
