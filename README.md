@@ -1,4 +1,4 @@
-# Marvel Client
+# Client that consumes Marvel API
 This project enables the user to interact with Marvel functionality through APIs, and aims to provide a simple demo about mocking.
 
 ## Pre-requisites
