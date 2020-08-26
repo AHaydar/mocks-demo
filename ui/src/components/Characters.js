@@ -15,23 +15,27 @@ const Characters = () => (
           description
         }
       }
-    `}
-  >
+    `}>
     {({ loading, error, data }) => {
       if (loading) return <p>Loading</p>;
-      if (error) return <div className="error"><p>No heroes around :(</p></div>;
+      if (error)
+        return (
+          <div className="error">
+            <p>No heroes around :(</p>
+          </div>
+        );
 
-      const charactersList = data.characters.map(character => (
+      const charactersList = data.characters.map((character) => (
         <Character character={character} key={character.id} />
       ));
       return (
         <div className="container">
+          <div>
+            <img className="marvel-image" src={marvel} alt="Marvel" />
+          </div>
           <div className="characters-list">
             <h1>Marvel Characters</h1>
             <ul>{charactersList}</ul>
-          </div>
-          <div>
-            <img className="marvel-image" src={marvel} alt="Marvel" />
           </div>
         </div>
       );
